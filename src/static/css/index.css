@@ -1,0 +1,67 @@
+@import '~antd/dist/antd.css';
+
+.search-box{
+  margin: 100px auto;
+  margin-bottom: 50px;
+  width: 700px;
+  border: 1px solid red;
+}
+
+/* logo部分 */
+img#logo {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+img#logo:hover {
+  transform: rotate(-2deg);
+  cursor: pointer;
+}
+
+/* 输入框 */
+.input-box{
+  margin-top: 30px;
+}
+
+/* 导航部分 */
+.nav-box{
+  width: 1300px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid red;
+}
+
+/* 导航菜单部分 */
+.menu{
+  width: 6em;
+  height: 100%;
+  background-color: rgb(0, 175, 236, 0.8);
+  position: absolute;
+  list-style: none;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+.menu li {
+  height: 2.5em;
+  line-height: 2.5em;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.menu li:hover {
+  opacity: 0.6;
+}
+
+.items {
+  margin-left: 7em;
+  height: 100%;
+  border: 1px solid green;
+}
+
+.items li{
+  
+}
