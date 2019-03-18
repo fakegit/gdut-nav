@@ -1,48 +1,55 @@
 @import '~antd/dist/antd.css';
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
 .search-box{
-  margin: 100px auto;
+  margin-top: 100px;
   margin-bottom: 50px;
-  width: 700px;
-  border: 1px solid red;
+  text-align: center;
 }
 
 /* logo部分 */
 img#logo {
-  width: 400px;
-  display: block;
-  margin: 0 auto;
+  width: 50%;
 }
 
 img#logo:hover {
-  transform: rotate(-2deg);
+  transform: rotate(-2deg) scale(1.06);
   cursor: pointer;
 }
 
 /* 输入框 */
 .input-box{
   margin-top: 30px;
+  width: 70%;
 }
 
 /* 导航部分 */
 .nav-box{
-  width: 1300px;
+  width: 60%;
   height: 600px;
-  margin: 0 auto;
   position: relative;
-  border: 1px solid red;
+  border: 1px solid rgba(0,0,0,0.2);
 }
 
 /* 导航菜单部分 */
 .menu{
   width: 6em;
   height: 100%;
-  background-color: rgb(0, 175, 236, 0.8);
+  background-color: rgba(0, 175, 236, 0.8);
   position: absolute;
-  list-style: none;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: white;
+  list-style: none;
 }
 
 .menu li {
@@ -53,15 +60,31 @@ img#logo:hover {
 }
 
 .menu li:hover {
-  opacity: 0.6;
+  color: green;
 }
 
 .items {
-  margin-left: 7em;
+  margin-left: 9em;
+  margin-right: 3em;
+  margin-top: 2em;
   height: 100%;
-  border: 1px solid green;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 3em;
+  font-size: 1.6rem;
 }
 
 .items li{
-  
+  height: 2.5em;
+  line-height: 2.5em;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: rgba(255,255,255,0.5);
+}
+
+.items li:hover {
+  cursor: pointer;
+  background-color: rgba(0, 175, 236, 0.8);
 }
