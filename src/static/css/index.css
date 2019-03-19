@@ -1,18 +1,37 @@
 @import '~antd/dist/antd.css';
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#root {
   background-image: url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; /* 背景图覆盖整个显示区域 */
+  background-size: 100% 100%; /* 背景图覆盖整个显示区域 */
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 设置github头像 */
+.github {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.github a img {
+  width: 3.6rem;
 }
 
 .search-box{
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 
@@ -28,24 +47,22 @@ img#logo:hover {
 
 /* 输入框 */
 .input-box{
-  margin-top: 30px;
+  margin-top: 3rem;
   width: 70%;
 }
 
 /* 导航部分, 分为导航菜单和站点列表两个部分 */
 .nav-box{
   width: 60%;
-  height: 600px;
-  position: relative;
-  border: 1px solid rgba(0,0,0,0.2);
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* 导航菜单部分 */
 .menu{
-  width: 6em;
-  height: 100%;
+  width: 100%;
+  height: 2.5em;
   background-color: rgba(0, 175, 236, 0.8);
-  position: absolute;
   text-align: center;
   font-size: 1.6rem;
   color: white;
@@ -53,10 +70,15 @@ img#logo:hover {
 }
 
 .menu li {
-  height: 2.5em;
+  width: 6em;
+  display: inline-block;
   line-height: 2.5em;
   cursor: pointer;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.menu li:first-child {
+  border-left: 1px solid rgba(0,0,0,0.1);
 }
 
 .menu li:hover {
@@ -65,31 +87,34 @@ img#logo:hover {
 
 /* 站点列表 */
 .items {
-  margin-left: 9em;
-  margin-right: 3em;
-  margin-top: 2em;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 3em;
+  padding-left: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-size: 1.6rem;
 }
 
 /* 清除a标签默认样式 */
 .items li a {
   color: inherit;
+  text-decoration: none;
 }
 
 .items li{
-  height: 2.5em;
-  line-height: 2.5em;
+  margin-top: 1.4em;
+  margin-right: 4em;
+  width: 12rem;
+  height: 3em;
+  line-height: 3em;
   text-align: center;
   font-weight: bold;
   border: 1px solid rgba(0,0,0,0.1);
-  background-color: rgba(255,255,255,0.5);
+  border-radius: 15%;
+  background-color: rgba(255,255,255,0.6);
 }
 
 .items li:hover {
   cursor: pointer;
+  color: rgb(224, 226, 188);
   background-color: rgba(0, 175, 236, 0.8);
 }
