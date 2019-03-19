@@ -7,7 +7,7 @@
   background-image: url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover; /* 背景图覆盖整个显示区域 */
 }
 
 .search-box{
@@ -32,7 +32,7 @@ img#logo:hover {
   width: 70%;
 }
 
-/* 导航部分 */
+/* 导航部分, 分为导航菜单和站点列表两个部分 */
 .nav-box{
   width: 60%;
   height: 600px;
@@ -63,6 +63,7 @@ img#logo:hover {
   color: green;
 }
 
+/* 站点列表 */
 .items {
   margin-left: 9em;
   margin-right: 3em;
@@ -70,9 +71,13 @@ img#logo:hover {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-column-gap: 3em;
   font-size: 1.6rem;
+}
+
+/* 清除a标签默认样式 */
+.items li a {
+  color: inherit;
 }
 
 .items li{

@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../static/images/logo.png';
 import {Input} from 'antd';
 
-const Search = Input.Search;
+const Search = Input.Search; // antd的按钮
 
 // logo和搜索框组件
 export default class SearchBox extends React.Component{
