@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import './static/css/reset.css';
 import './static/css/index.css';
+import './static/css/public.css';
 import Github from './static/images/github.png';
 
 import SearchBox from './component/SearchBox';
@@ -13,7 +14,7 @@ import {reducer, store} from './store/store';
 ReactDOM.render(<div className="container">
     <div className="github">
         <a href="https://github.com/brenner8023/gdutnav" target="_blank">
-            <img src={Github} alt="github" title="github" />
+            <img src={Github} alt="github" title="Talk is cheap. Show me the code." />
         </a>
     </div>
     <SearchBox />

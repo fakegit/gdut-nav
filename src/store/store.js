@@ -1,5 +1,5 @@
 import {createStore} from 'redux';
-import {schoolNav, commonSite, commonSoftware, csLearning, blog, gameList} from '../db';
+import {schoolNav, commonSite, commonSoftware, bookList, csLearning, blog, gameList} from '../db';
 
 let reducer = (state={list: schoolNav}, action) => {
     switch(action.type){
@@ -11,6 +11,9 @@ let reducer = (state={list: schoolNav}, action) => {
             break;
         case 'commonSoftware':
             state = {...state, list: commonSoftware};
+            break;
+        case 'bookList':
+            state = {...state, list: bookList};
             break;
         case 'csLearning':
             state = {...state, list: csLearning};

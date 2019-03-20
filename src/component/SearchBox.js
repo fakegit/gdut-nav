@@ -13,7 +13,7 @@ export default class SearchBox extends React.Component{
     render(){
         return <div className="search-box">
         <a href="https://www.zhihu.com/topic/19604314/intro" target="_blank">
-            <img id="logo" src={Logo} alt="工大导航" title="工大导航" />
+            <img id="logo" src={Logo} alt="工大导航" title="团结勤奋求是创新" />
         </a>
         <Search className="input-box" size="large" enterButton placeholder="百度一下" onSearch={value => window.open("https://www.baidu.com/s?wd="+value)} autoFocus />
         </div>;
