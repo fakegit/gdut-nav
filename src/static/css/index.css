@@ -24,7 +24,7 @@ body {
   padding-right: 2rem;
 }
 
-.github a .githubAvatar {
+.github a .antd-github {
   font-size: 3.6rem;
 }
 
@@ -40,14 +40,14 @@ img#logo {
 }
 
 img#logo:hover {
-  transform: rotate(-2deg) scale(1.06);
+  transform: rotate(-2deg) scale(1.02);
   cursor: pointer;
 }
 
 /* 输入框 */
-.input-box{
+.antd-input {
   margin-top: 3rem;
-  width: 70%;
+  width: 80%;
 }
 
 /* 导航部分, 分为导航菜单和站点列表两个部分 */

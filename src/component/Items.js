@@ -12,7 +12,7 @@ export default class Items extends React.Component{
 
     componentDidMount() {
         let {store: {getState, subscribe}} = this.props;
-        let unsubscribe = subscribe(()=>{
+        subscribe(()=>{
             let {list} = getState();
             this.setState({arr: list});
         });
