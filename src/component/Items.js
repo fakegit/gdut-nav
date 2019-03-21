@@ -21,7 +21,7 @@ export default class Items extends React.Component{
     render() {
         return <ul className="items">
                 {this.state.arr.map((item, index)=>{
-                    return <a href={item.url} target="_blank"><li key={index}>{item.name}</li></a>;
+                    return <a href={item.url} target="_blank" key={index}><li key={index}>{item.name}</li></a>;
                 })}
             </ul>;
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../static/images/logo.png';
 import {Input} from 'antd';
+import axios from 'axios';
 
 const Search = Input.Search; // antd的按钮
 
@@ -19,3 +20,5 @@ export default class SearchBox extends React.Component{
         </div>;
     }
 }
+// axios.defaults.baseURL = "https://hitokoto.cn";
+console.log(axios.get("https://hitokoto.cn?c=g").then(res=>{return res.json()}).then(data=>{console.log(data.hitokoto)}).catch(error=>{console.log(error)}));

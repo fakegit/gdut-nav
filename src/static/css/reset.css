@@ -14,4 +14,4 @@ fieldset, img { border:0; }
 button, input, select, textarea { font-size:100%; } 
 table { border-collapse:collapse; border-spacing:0; }
 
-html, body{min-width: 768px; height: 100%; font-size: 62.5%;}
+html, body{min-width: 1206px; height: 100%; font-size: 62.5%; font-family: Lato, "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !important;}

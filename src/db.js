@@ -31,10 +31,6 @@ export const schoolNav = [
         url: "http://www.gdut.edu.cn/"
     },
     {
-        name: "官方微博",
-        url: "https://weibo.com/gdutnc"
-    },
-    {
         name: "教务系统",
         url: "http://jxfw.gdut.edu.cn/"
     },
@@ -63,12 +59,16 @@ export const schoolNav = [
         url: "http://psy.gdut.edu.cn/web/home/default"
     },
     {
+        name: "校医院",
+        url: "http://xyy.gdut.edu.cn/jyzn.htm"
+    },
+    {
         name: "本科招生网",
         url: "http://zsb.gdut.edu.cn/"
     },
     {
-        name: "校医院",
-        url: "http://xyy.gdut.edu.cn/jyzn.htm"
+        name: '教学日历',
+        url: 'http://jwc.gdut.edu.cn/jwgl/jxrl.htm'
     },
     {
         name: "校内新闻",
@@ -134,16 +134,17 @@ export const commonSite = [
         url: "https://www.qichacha.com/search?key=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6"
     },
     {
+        name: "msdn我告诉你",
+        url: "https://msdn.itellyou.cn/"
+    },
+    {
         name: "高德地图",
         url: "https://www.amap.com/search?query=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6"
     }
 ];
 
 export const commonSoftware = [
-    {
-        name: "MSDN",
-        url: "https://msdn.itellyou.cn/"
-    },
+
     {
         name: "Firefox",
         url: "https://www.mozilla.org/"
@@ -155,10 +156,6 @@ export const commonSoftware = [
     {
         name: "QQ影音",
         url: "https://player.qq.com/"
-    },
-    {
-        name: "TeamViewer",
-        url: "https://www.teamviewer.com/cn/"
     },
     {
         name: "Notepad++",
