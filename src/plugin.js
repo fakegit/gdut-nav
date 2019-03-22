@@ -1,3 +1,16 @@
+import axios from 'axios';
+import bgImg from './static/images/bg.jpg';
+
+// 获取bing每日壁纸并设置为背景图片
+axios.get("HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN").then((obj)=>{return obj.data.images[0].url}).then(url=>{
+    let body = document.body;
+    body.style.backgroundImage = "url(" + "https://cn.bing.com" + url + ")";
+}).catch(err=>{
+    console.log(err);
+    let body = document.body;
+    body.style.backgroundImage = "url(" + bgImg + ")";
+});
+
 // 鼠标点击出现红心特效
 (function(window,document,undefined){
     var hearts = [];

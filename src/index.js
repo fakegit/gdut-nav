@@ -4,7 +4,6 @@ import {Icon} from 'antd';
 
 import './static/css/reset.css';
 import './static/css/index.css';
-import './static/css/public.css';
 import './plugin';
 
 import SearchBox from './component/SearchBox';

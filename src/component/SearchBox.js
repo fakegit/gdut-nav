@@ -14,14 +14,21 @@ export default class SearchBox extends React.Component {
         }
     }
 
-    componentWillMount() {
-        axios.get("https://v1.hitokoto.cn?c=b").then(res => {return res.data}).then(data => {this.setState({hitokoto: data.hitokoto})}).catch(error => {console.error(error)});
-    }
+    // 获取hitokoto一句话
+    getHitokoto = () => {
+        axios.get("https://v1.hitokoto.cn?c=b").then(obj => {return obj.data.hitokoto}).then(result => {
+            if(result.length > 32) {
+                this.getHitokoto();
+            }else this.setState({hitokoto: result});
+        }).catch(err => {console.error(err)});
+    };
 
+    componentWillMount() {
+        this.getHitokoto();
+    }
+    
     componentDidMount() {
-        setInterval(()=>{
-            axios.get("https://v1.hitokoto.cn?c=b").then(res => {return res.data}).then(data => {this.setState({hitokoto: data.hitokoto})}).catch(error => {console.error(error)});
-        },10000)
+        setInterval(()=>{this.getHitokoto()},10000)
     }
 
     render() {
