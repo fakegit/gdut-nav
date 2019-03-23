@@ -24,6 +24,8 @@ let reducer = (state={list: schoolNav}, action) => {
         case 'gameList':
             state = {...state, list: gameList};
             break;
+        default:
+            return state;
     }
     return state;
 };

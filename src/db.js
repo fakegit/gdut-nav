@@ -8,7 +8,7 @@ export const menuArr = [
         value: '常用网站'
     },
     {   title: 'commonSoftware',
-        value: '常用软件'
+        value: '软件工具'
     },
     {
         title: 'bookList',
@@ -114,12 +114,12 @@ export const commonSite = [
         url: "https://xueshu.baidu.com/"
     },
     {
-        name: "百度贴吧",
-        url: "http://tieba.baidu.com/f?kw=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6"
+        name: "腾讯动漫",
+        url: "https://ac.qq.com/"
     },
     {
         name: "知乎",
-        url: "https://www.zhihu.com"
+        url: "https://www.zhihu.com/topic/19604314/intro"
     },
     {
         name: "豆瓣",

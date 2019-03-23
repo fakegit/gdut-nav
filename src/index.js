@@ -9,11 +9,11 @@ import './plugin';
 import SearchBox from './component/SearchBox';
 import Menu from './component/Menu';
 import Items from './component/Items';
-import {reducer, store} from './store/store';
+import {store} from './store/store';
 
 ReactDOM.render(<div className="container">
     <div className="github">
-        <a href="https://github.com/brenner8023/gdutnav" target="_blank">
+        <a href="https://github.com/brenner8023/gdutnav" target="_blank" rel="noopener noreferrer">
             <Icon type="github" title="Talk is cheap. Show me the code." alt="github.com/brenner8023" className="antd-github" />
         </a>
     </div>

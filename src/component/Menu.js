@@ -6,24 +6,24 @@ export default class Menu extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            menuArr,
-            triStyle: {}
+            menuArr
         }
     }
 
     // 点击导航菜单, 渲染items子项目
-    handleClick = (e) => {
+    handleClick = (e, index) => {
         let {store: {dispatch}} = this.props;
-        const action = {type: e.currentTarget.getAttribute('data-id')};
+        const action = {type: menuArr[index].title};
         dispatch(action);
     }
 
     render(){
-        return <ul className="menu">
-            {this.state.menuArr.map((item, index)=>{
-            return <li onClick={this.handleClick} key={index} data-id={item.title}>{item.value}</li>;
-        })}
-            <span className="triangle" style={this.state.triStyle}></span>
-        </ul>;
+        return <div className="menu">
+            <ul >
+                {this.state.menuArr.map((item, index)=>{
+                return <li onClick={(e)=>{this.handleClick(e, index)}} key={index}>{item.value}</li>;
+                })}
+            </ul>
+        </div>;
     }
 }

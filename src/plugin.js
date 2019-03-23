@@ -1,18 +1,22 @@
-import axios from 'axios';
-import bgImg from './static/images/bg.jpg';
+import bg1 from './static/images/1.jpg';
+import bg2 from './static/images/2.jpg';
+import bg3 from './static/images/3.jpg';
+import bg4 from './static/images/4.jpg';
+import bg5 from './static/images/5.jpg';
+import bg6 from './static/images/6.jpg';
 
-// 获取bing每日壁纸并设置为背景图片
-axios.get("HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN").then((obj)=>{return obj.data.images[0].url}).then(url=>{
-    let body = document.body;
-    body.style.backgroundImage = "url(" + "https://cn.bing.com" + url + ")";
-}).catch(err=>{
-    console.log(err);
-    let body = document.body;
-    body.style.backgroundImage = "url(" + bgImg + ")";
-});
+// 设置随机背景图片
+function setWallpaper() {
+    const body = document.body;
+    const imgArr = [bg1, bg2, bg3, bg4, bg5, bg6];
+    let num = Math.floor(Math.random() * 6);
+    const url2 = ['url(', imgArr[num], ')'].join('');
+    body.style.backgroundImage = url2;
+}
+setWallpaper();
 
-// 鼠标点击出现红心特效
-(function(window,document,undefined){
+// 鼠标点击出现爱心特效
+(function(window,document){
     var hearts = [];
     window.requestAnimationFrame = (function(){
         return window.requestAnimationFrame ||

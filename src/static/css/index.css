@@ -31,6 +31,7 @@ body {
   margin-top: 10rem;
   margin-bottom: 5rem;
   text-align: center;
+  position: relative;
 }
 
 /* logo部分 */
@@ -49,6 +50,29 @@ img#logo:hover {
   width: 80%;
 }
 
+/* 搜索提示的列表 */
+.search-box ul {
+  width: 76%;
+  background-color: white;
+  position: absolute;
+  left: 6em;
+  text-align: left;
+  padding-left: 2px;
+  z-index: 1;
+}
+
+.search-box ul a li {
+  font-size: 1.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 2.4em;
+  line-height: 2.4em;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.search-box ul a li:hover {
+  background-color: rgba(33, 33, 33, 0.1);
+}
+
 /* 导航部分, 分为导航菜单和站点列表两个部分 */
 .nav-box{
   width: 60%;
@@ -59,47 +83,35 @@ img#logo:hover {
 .menu {
   width: 100%;
   height: 3.2em;
-  background-color: rgba(0, 175, 236, 0.8);
+  background-color: rgba(0, 102, 153, 0.8);
   text-align: center;
   font-size: 1.6rem;
   color: white;
   list-style: none;
-  position: relative;
 }
 
-.menu li {
+.menu ul li {
   width: 6em;
   display: inline-block;
   line-height: 3.2em;
   cursor: pointer;
   border-right: 1px solid rgba(0,0,0,0.1);
+  position: relative;
 }
 
-.menu li:first-child {
+.menu ul li:first-child {
   border-left: 1px solid rgba(0,0,0,0.1);
 }
 
-.menu li:hover {
-  color: green;
-}
-
-/* 三角形 */
-.menu .triangle {
-  display: inline-block;
-  width: 0;
-  border-bottom: 0.7em solid rgba(214, 218, 230);
-  border-left: 0.7em solid transparent;
-  border-right: 0.7em solid transparent;
-  position: absolute;
-  top: calc(3.2em - 0.7em);
-  left: calc(50% - 0.7em);
+.menu ul li:hover {
+  background-color: rgb(0, 102, 204);
 }
 
 /* 站点列表 */
 .items {
   padding-left: 4em;
   padding-bottom: 1.4em;
-  min-height: 17.6em;
+  min-height: 19em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -109,7 +121,7 @@ img#logo:hover {
 
 /* 清除a标签的默认样式 */
 .items a {
-  color: inherit;
+  color: white;
   text-decoration: none;
   margin-top: 1.4em;
   margin-right: 4em;
@@ -121,11 +133,10 @@ img#logo:hover {
   line-height: 3em;
   text-align: center;
   border-radius: 15%;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(0, 153, 204, 0.8);
 }
 
 .items a li:hover {
   cursor: pointer;
-  color: rgb(224, 226, 188);
-  background-color: rgba(0, 175, 236, 0.8);
+  background-color: rgb(0, 102, 204);
 }
