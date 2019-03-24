@@ -90,8 +90,8 @@ export const commonSite = [
         url: "https://s.weibo.com/top/summary?cate=realtimehot"
     },
     {
-        name: "谷歌翻译",
-        url: "https://translate.google.cn/"
+        name: "腾讯动漫",
+        url: "https://ac.qq.com/"
     },
     {
         name: "哔哩哔哩",
@@ -110,12 +110,12 @@ export const commonSite = [
         url: "https://www.icourse163.org/"
     },
     {
-        name: "百度学术",
-        url: "https://xueshu.baidu.com/"
+        name: "网易云音乐",
+        url: "https://music.163.com/"
     },
     {
-        name: "腾讯动漫",
-        url: "https://ac.qq.com/"
+        name: "百度学术",
+        url: "https://xueshu.baidu.com/"
     },
     {
         name: "知乎",
@@ -126,8 +126,12 @@ export const commonSite = [
         url: "https://www.douban.com/"
     },
     {
-        name: "网易邮箱",
-        url: "https://mail.163.com/"
+        name: "下厨房",
+        url: "https://www.xiachufang.com/"
+    },
+    {
+        name: "谷歌翻译",
+        url: "https://translate.google.cn/"
     },
     {
         name: "企查查",
@@ -144,10 +148,13 @@ export const commonSite = [
 ];
 
 export const commonSoftware = [
-
     {
         name: "Firefox",
         url: "https://www.mozilla.org/"
+    },
+    {
+        name: "ubuntu",
+        url: "https://www.ubuntu.com/"
     },
     {
         name: "火绒安全",
@@ -176,6 +183,18 @@ export const commonSoftware = [
     {
         name: "微PE工具箱",
         url: "http://www.wepe.com.cn/"
+    },
+    {
+        name: "witeboard",
+        url: "https://witeboard.com"
+    },
+    {
+        name: "tinypng",
+        url: "https://tinypng.com/"
+    },
+    {
+        name: "Awesome Windows",
+        url: "https://github.com/Awesome-Windows/Awesome/blob/master/README-cn.md"
     }
 ];
 
@@ -396,16 +415,24 @@ export const csLearning = [
         url: "https://juejin.im/timeline"
     },
     {
-        name: '极客时间',
-        url: "https://time.geekbang.org/"
-    },
-    {
-        name: '菜鸟教程',
-        url: "https://www.runoob.com/"
-    },
-    {
         name: 'V2EX',
         url: "https://www.v2ex.com/"
+    },
+    {
+        name: "USTC-Resource",
+        url: "https://github.com/USTC-Resource/"
+    },
+    {
+        name: "浙大课程",
+        url: "https://github.com/QSCTech/zju-icicles"
+    },
+    {
+        name: "清华课程",
+        url: "https://github.com/Trinkle23897/THU-CST-Cracker"
+    },
+    {
+        name: "东南大学课程",
+        url: "https://github.com/zjdx1998/seucourseshare/"
     }
 ];
 
