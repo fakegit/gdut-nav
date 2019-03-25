@@ -19,7 +19,7 @@ export default class Menu extends React.Component{
 
     render(){
         return <div className="menu">
-            <ul >
+            <ul>
                 {this.state.menuArr.map((item, index)=>{
                 return <li onClick={(e)=>{this.handleClick(e, index)}} key={index}>{item.value}</li>;
                 })}

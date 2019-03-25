@@ -193,7 +193,7 @@ export const commonSoftware = [
         url: "https://tinypng.com/"
     },
     {
-        name: "Awesome Windows",
+        name: "Windows推荐",
         url: "https://github.com/Awesome-Windows/Awesome/blob/master/README-cn.md"
     }
 ];
@@ -419,7 +419,7 @@ export const csLearning = [
         url: "https://www.v2ex.com/"
     },
     {
-        name: "USTC-Resource",
+        name: "中科大课程",
         url: "https://github.com/USTC-Resource/"
     },
     {
