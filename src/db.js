@@ -484,8 +484,16 @@ export const gameList = [
         name: "与跳楼者谈判",
         url: "http://www.u77.com/game/6467"
     },
-    {
-        name: "Mikutap",
-        url: "https://aidn.jp/mikutap/"
-    }
+	{
+		name: "2048",
+		url: "https://likexia.gitee.io/2048/"
+	},
+	{
+		name: "Lode Runner",
+		url: "http://loderunnerwebgame.com/game/"
+	},
+	{
+		name: "猫里奥",
+		url: "http://www.7k7k.com/swf/132942.htm"
+	}
 ];
