@@ -192,6 +192,10 @@ export const commonSoftware = [
         name: "tinypng",
         url: "https://tinypng.com/"
     },
+	{
+		name: "office模板",
+		url: "http://www.officeplus.cn/Template/Home.shtml"
+	},
     {
         name: "Windows推荐",
         url: "https://github.com/Awesome-Windows/Awesome/blob/master/README-cn.md"
