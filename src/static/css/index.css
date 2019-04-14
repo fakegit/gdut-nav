@@ -1,11 +1,8 @@
 @import '~antd/dist/antd.css';
 
-/* 设置背景图 */
+/* 设置背景 */
 body {
-  background-image: url('../images/bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  background-color: rgba(242, 244, 245);
 }
 
 .container {
@@ -24,11 +21,11 @@ body {
   padding-right: 2rem;
 }
 
-.github a .antd-github {
-  font-size: 3.6rem;
+.github a svg {
+  width: 5rem;
 }
 
-.search-box{
+.logo {
   margin-top: 10rem;
   margin-bottom: 5rem;
   text-align: center;
@@ -37,7 +34,7 @@ body {
 
 /* logo部分 */
 img#logo {
-  width: 50%;
+  width: 70%;
 }
 
 img#logo:hover {
@@ -45,14 +42,19 @@ img#logo:hover {
   cursor: pointer;
 }
 
-/* 输入框 */
-.antd-input {
+/* 输入框
+.search-input {
   margin-top: 3rem;
-  width: 80%;
-}
+  width: 90%;
+  height: 3em;
+  padding-left: 1em;
+  outline: none;
+  border: 1px solid;
+  border-radius: 5%;
+} */
 
 /* 搜索提示的列表 */
-.search-box ul {
+/* .search-box ul {
   width: 76%;
   background-color: white;
   position: absolute;
@@ -60,19 +62,19 @@ img#logo:hover {
   text-align: left;
   padding-left: 2px;
   z-index: 1;
-}
+} */
 
-.search-box ul a li {
+/* .search-box ul a li {
   font-size: 1.6rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   height: 2.4em;
   line-height: 2.4em;
   color: rgba(0, 0, 0, 0.65);
-}
+} */
 
-.search-box ul a li:hover {
+/* .search-box ul a li:hover {
   background-color: rgba(33, 33, 33, 0.1);
-}
+} */
 
 /* 导航部分, 分为导航菜单和站点列表两个部分 */
 .nav-box{

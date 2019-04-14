@@ -40,7 +40,7 @@ export const schoolNav = [
     },
     {
         name: "就业信息",
-        url: "http://job.gdut.edu.cn/unijob/index.php/web/Index/job-list"
+        url: "http://job.gdut.edu.cn/unijob/index.php/web/Index/special-list?type=jiuyezhiliangnianbao"
     },
     {
         name: "校园网续费",
