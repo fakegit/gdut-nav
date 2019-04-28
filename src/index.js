@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './static/css/reset.css';
-import './static/css/index.css';
+import './static/css/reset.scss';
+import './static/css/index.scss';
 import './plugin';
 
 import LogoBox from './component/LogoBox';

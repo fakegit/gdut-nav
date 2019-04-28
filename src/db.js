@@ -82,8 +82,8 @@ export const commonSite = [
         url: "https://wx2.qq.com/"
     },
     {
-        name: "CNN新闻网",
-        url: "https://edition.cnn.com/china"
+        name: "虎嗅网",
+        url: "https://www.huxiu.com/"
     },
     {
         name: "微博热搜",
