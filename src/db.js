@@ -1,4 +1,4 @@
-export const menuArr = [
+const menuArr = [
     {
         title: 'schoolNav',
         value: '校内导航'
@@ -25,7 +25,7 @@ export const menuArr = [
         value: '娱乐游戏'
     }];
 
-export const schoolNav = [
+const schoolNav = [
     {
         name: "工大官网",
         url: "http://www.gdut.edu.cn/"
@@ -76,7 +76,7 @@ export const schoolNav = [
     }
 ];
 
-export const commonSite = [
+const commonSite = [
     {
         name: "微信网页版",
         url: "https://wx2.qq.com/"
@@ -147,7 +147,7 @@ export const commonSite = [
     }
 ];
 
-export const commonSoftware = [
+const commonSoftware = [
     {
         name: "Firefox",
         url: "https://www.mozilla.org/"
@@ -202,7 +202,7 @@ export const commonSoftware = [
     }
 ];
 
-export const bookList = [
+const bookList = [
     {
         name: '追寻生命的意义',
         url: 'https://book.douban.com/subject/1135734/'
@@ -397,7 +397,7 @@ export const bookList = [
     }
 ];
 
-export const csLearning = [
+const csLearning = [
     {
         name: "GitHub",
         url: "https://github.com/brenner8023"
@@ -440,7 +440,7 @@ export const csLearning = [
     }
 ];
 
-export const blog = [
+const blog = [
     {
         name: "阮一峰",
         url: "https://www.ruanyifeng.com/"
@@ -475,7 +475,7 @@ export const blog = [
     }
 ];
 
-export const gameList = [
+const gameList = [
     {
         name: "雀魂",
         url: "https://majsoul.union-game.com/#/"
@@ -484,6 +484,10 @@ export const gameList = [
         name: "在线DOS游戏",
         url: "https://dos.zczc.cz/"
     },
+	{
+		name: "小霸王模拟器",
+		url: "https://yikm.net/"
+	},
     {
         name: "与跳楼者谈判",
         url: "http://www.u77.com/game/6467"
@@ -501,3 +505,14 @@ export const gameList = [
 		url: "http://www.7k7k.com/swf/132942.htm"
 	}
 ];
+
+export {
+	menuArr: menuArr,
+	schoolNav: schoolNav,
+	commonSite: commonSite,
+	commonSoftware: commonSoftware,
+	bookList: bookList,
+	csLearning: csLearning,
+	blog: blog,
+	gameList: gameList
+};
