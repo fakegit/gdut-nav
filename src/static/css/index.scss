@@ -1,146 +1,119 @@
-@mixin textAlign($align) {
-  width: 100%;
-  text-align: $align;
+// 清除链接默认样式
+@mixin clearLinkStyle() {
+    text-decoration: none;
+    color: inherit;
+}
+// 边框样式
+@mixin borderStyle() {
+    border: 0.2rem solid black;
 }
 
-@mixin flex {
-  display: flex;
-  align-items: center;
-}
+.header {
+    text-align: center; // 实现水平居中
 
-/* 设置背景 */
-body {
-  background-color: rgba(242, 244, 245, 1);
-}
+    .header-github {
+        text-align: right; // 靠右显示
+        padding-top: 0.6rem;
+        padding-right: 0.6rem;
 
-.container {
-  @include flex;
-  flex-direction: column;
-}
+        a {
+            @include clearLinkStyle();
 
-/* 设置github图标 */
-.github {
-  margin-top: 2rem;
-  margin-right: 2rem;
-  position: fixed; // 固定定位
-  @include textAlign(right); // 使github图标位于最右
-  padding-right: 2rem;
-
-  a svg {
-    width: 5rem;
-  }
-}
-
-/* logo部分 */
-.logo {
-  margin-top: 10rem;
-  margin-bottom: 5rem;
-  text-align: center;
-  position: relative;
-
-  img#logo {
-    width: 70%;
-  
-    &:hover {
-      transform: rotate(-2deg) scale(1.02);
+            .iconfont {
+                font-size: 1.4rem;
+            }
+        }
     }
-  }
+
+    .header-title {
+        font-size: 1.4rem;
+        .iconfont {
+            margin-left: 0.2rem;
+            font-size: 1.4rem;
+        }
+        
+    }
+
+    .header-subtitle {
+        font-size: 0.6rem;
+        line-height: 1.6rem; // 设置上下间隔
+        color: #00adb5;
+
+        .iconfont {
+            font-size: 0.6rem;
+            margin-right: 0.2rem;
+        }
+    }
 }
 
-/* 输入框
-.search-input {
-  margin-top: 3rem;
-  width: 90%;
-  height: 3em;
-  padding-left: 1em;
-  outline: none;
-  border: 1px solid;
-  border-radius: 5%;
-} */
+.search {
+    box-sizing: border-box;
+    width: 76%;
+    margin: 1rem auto;
+    border: 1px solid green;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    @include borderStyle();
 
-/* 搜索提示的列表 */
-/* .search-box ul {
-  width: 76%;
-  background-color: white;
-  position: absolute;
-  left: 6em;
-  text-align: left;
-  padding-left: 2px;
-  z-index: 1;
-} */
+    input {
+        width: 90%;
+        border: none;
+        outline: none;
+    }
 
-/* .search-box ul a li {
-  font-size: 1.6rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  height: 2.4em;
-  line-height: 2.4em;
-  color: rgba(0, 0, 0, 0.65);
-} */
-
-/* .search-box ul a li:hover {
-  background-color: rgba(33, 33, 33, 0.1);
-} */
-
-/* 导航部分, 分为导航菜单和站点列表两个部分 */
-.nav-box{
-  width: 60%;
+    .iconfont {
+        font-size: 1rem;
+        margin-right: 0.4rem;
+    }
 }
 
-/* 导航菜单部分 */
-.menu {
-  @include textAlign(center);
-  height: 3.2em;
-  background-color: rgba(0, 102, 153, 0.8);
-  font-size: 1.6rem;
-  color: white;
-  list-style: none;
-
-  ul li {
-    width: 6em;
-    display: inline-block;
-    line-height: 3.2em;
-    cursor: pointer;
-    border-right: 1px solid rgba(0,0,0,0.1);
+.main-nav {
+    box-sizing: border-box;
+    margin: 2rem auto;
+    @include borderStyle();
+    width: 76%;
+    min-height: 8rem;
     position: relative;
 
-    &:first-child {
-      border-left: 1px solid rgba(0,0,0,0.1);
+    .nav-title {
+        font-size: 1.2rem;
+        background: #fff;
+        position: absolute;
+        left: 1rem;
+        top: -1.2rem;
+        padding: 0.2rem;
+
+        .iconfont {
+            font-size: 1.2rem;
+            margin-right: 0.2rem;
+        }
+
     }
 
-    &:hover {
-      background-color: rgb(0, 102, 204);
+    .nav-items {
+        display: flex;
+        padding: 2rem 0rem 1rem 1rem;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+
+        a {
+            @include clearLinkStyle();
+        }
+
+        li {
+            border: 1px solid black;
+            min-width: 6rem;
+            padding: 0.2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-left: 1.6rem;
+            transition: all 200ms;
+
+            &:hover {
+                box-shadow: 0.5rem 1.75rem 3.125rem rgba(39,44,49,.07),
+                0.0625rem 0.375rem 0.75rem rgba(39,44,49,.04);
+                transform: translateY(-0.12rem);
+            }
+        }
     }
-  }
-}
-
-/* 站点列表 */
-.items {
-  padding-left: 4em;
-  padding-bottom: 1.4em;
-  min-height: 19em;
-  @include flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-size: 1.6rem;
-
-  a {
-    color: white;
-    text-decoration: none;
-    margin-top: 1.4em;
-    margin-right: 4em;
-
-    li {
-      width: 12rem;
-      height: 3em;
-      line-height: 3em;
-      text-align: center;
-      border-radius: 15%;
-      background-color: rgba(0, 153, 204, 0.8);
-
-      &:hover {
-        cursor: pointer;
-        background-color: rgb(0, 102, 204);
-      }
-    }
-  }
 }

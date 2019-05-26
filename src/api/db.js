@@ -1,28 +1,27 @@
-const menuArr = [
+const navTitle = [
     {
-        title: 'schoolNav',
-        value: '校内导航'
-    },
-    {
-        title: 'commonSite',
-        value: '常用网站'
-    },
-    {   title: 'commonSoftware',
-        value: '软件工具'
+        title: '校内导航',
+        iconfont: '&#xe611;'
     },
     {
-        title: 'bookList',
-        value: '书籍荐读'
-    },
-    {   title: 'csLearning',
-        value: '编程学习'
+        title: '网站集合',
+        iconfont: '&#xe60c;'
     },
     {
-        title: 'blog',
-        value: '技术博客'
+        title:'工具集合',
+        iconfont: '&#xe66f;'
     },
-    {   title: 'gameList',
-        value: '娱乐游戏'
+    {
+        title: '编程开发',
+        iconfont: '&#xe615;'
+    },
+    {
+        title: '博客集合',
+        iconfont: '&#xe603;'
+    },
+    {
+        title: '游戏集合',
+        iconfont: '&#xe625;'
     }];
 
 const schoolNav = [
@@ -76,7 +75,7 @@ const schoolNav = [
     }
 ];
 
-const commonSite = [
+const siteCollection = [
     {
         name: "微信网页版",
         url: "https://wx2.qq.com/"
@@ -147,7 +146,7 @@ const commonSite = [
     }
 ];
 
-const commonSoftware = [
+const toolCollection = [
     {
         name: "Firefox",
         url: "https://www.mozilla.org/"
@@ -202,202 +201,7 @@ const commonSoftware = [
     }
 ];
 
-const bookList = [
-    {
-        name: '追寻生命的意义',
-        url: 'https://book.douban.com/subject/1135734/'
-    },
-    {
-        name: '拖延心理学',
-        url: 'https://www.douban.com/search?q=%E6%8B%96%E5%BB%B6%E5%BF%83%E7%90%86%E5%AD%A6'
-    },
-    {
-        name: '梦的解析',
-        url: 'https://www.douban.com/search?q=梦的解析'
-    },
-    {
-        name: '宽容',
-        url: 'https://www.douban.com/search?q=宽容'
-    },
-    {
-        name: '如何阅读一本书',
-        url: 'https://www.douban.com/search?q=如何阅读一本书'
-    },
-    {
-        name: '影响力',
-        url: 'https://www.douban.com/search?q=影响力'
-    },
-    {
-        name: '政府论',
-        url: 'https://www.douban.com/search?q=政府论'
-    },
-    {
-        name: '人的潜能和价值',
-        url: 'https://www.douban.com/search?q=人的潜能和价值'
-    },
-    {
-        name: '设计心理学',
-        url: 'https://www.douban.com/search?q=设计心理学'
-    },
-    {
-        name: '小王子',
-        url: 'https://www.douban.com/search?q=小王子'
-    },
-    {
-        name: '策略思维',
-        url: 'https://www.douban.com/search?q=策略思维'
-    },
-    {
-        name: '无价',
-        url: 'https://www.douban.com/search?q=无价'
-    },
-    {
-        name: '浅薄',
-        url: 'https://www.douban.com/search?q=浅薄'
-    },
-    {
-        name: '定位',
-        url: 'https://www.douban.com/search?q=定位'
-    },
-    {
-        name: '麦肯锡方法',
-        url: 'https://www.douban.com/search?q=麦肯锡方法'
-    },
-    {
-        name: '社会契约论',
-        url: 'https://www.douban.com/search?q=社会契约论'
-    },
-    {
-        name: '人月神话',
-        url: 'https://www.douban.com/search?q=人月神话'
-    },
-    {
-        name: '伦理学',
-        url: 'https://www.douban.com/search?q=伦理学'
-    },
-    {
-        name: '目送',
-        url: 'https://www.douban.com/search?q=目送'
-    },
-    {
-        name: '欢乐的经济学',
-        url: 'https://www.douban.com/search?q=欢乐的经济学'
-    },
-    {
-        name: '一九八四',
-        url: 'https://www.douban.com/search?q=一九八四'
-    },
-    {
-        name: '雪国',
-        url: 'https://www.douban.com/search?q=雪国'
-    },
-    {
-        name: '自私的基因',
-        url: 'https://www.douban.com/search?q=自私的基因'
-    },
-    {
-        name: 'Facebook效应',
-        url: 'https://www.douban.com/search?q=Facebook效应'
-    },
-    {
-        name: '历史研究',
-        url: 'https://www.douban.com/search?q=历史研究'
-    },
-    {
-        name: '论美国的民主',
-        url: 'https://www.douban.com/search?q=论美国的民主'
-    },
-    {
-        name: '西方美学史',
-        url: 'https://www.douban.com/search?q=西方美学史'
-    },
-    {
-        name: '长尾理论',
-        url: 'https://www.douban.com/search?q=长尾理论'
-    },
-    {
-        name: '理想国',
-        url: 'https://www.douban.com/search?q=理想国'
-    },
-    {
-        name: '菊花与刀',
-        url: 'https://www.douban.com/search?q=菊花与刀'
-    },
-    {
-        name: '激荡三十年',
-        url: 'https://www.douban.com/search?q=激荡三十年'
-    },
-    {
-        name: '经济学原理',
-        url: 'https://www.douban.com/search?q=经济学原理'
-    },
-    {
-        name: '悲惨世界',
-        url: 'https://www.douban.com/search?q=悲惨世界'
-    },
-    {
-        name: '芙蓉镇',
-        url: 'https://www.douban.com/search?q=芙蓉镇'
-    },
-    {
-        name: '平凡的世界',
-        url: 'https://www.douban.com/search?q=平凡的世界'
-    },
-    {
-        name: '老人与海',
-        url: 'https://www.douban.com/search?q=老人与海'
-    },
-    {
-        name: '红与黑',
-        url: 'https://www.douban.com/search?q=红与黑'
-    },
-    {
-        name: '战争论',
-        url: 'https://www.douban.com/search?q=战争论'
-    },
-    {
-        name: '惠普之道',
-        url: 'https://www.douban.com/search?q=惠普之道'
-    },
-    {
-        name: '非暴力沟通',
-        url: 'https://www.douban.com/search?q=非暴力沟通'
-    },
-    {
-        name: '人性的弱点',
-        url: 'https://www.douban.com/search?q=人性的弱点'
-    },
-    {
-        name: '爱的艺术',
-        url: 'https://www.douban.com/search?q=爱的艺术'
-    },
-    {
-        name: '正义论',
-        url: 'https://www.douban.com/search?q=正义论'
-    },
-    {
-        name: '心理学与生活',
-        url: 'https://www.douban.com/search?q=心理学与生活'
-    },
-    {
-        name: '玩偶之家',
-        url: 'https://www.douban.com/search?q=玩偶之家'
-    },
-    {
-        name: '生命是什么',
-        url: 'https://www.douban.com/search?q=生命是什么'
-    },
-    {
-        name: '西方的没落',
-        url: 'https://www.douban.com/search?q=西方的没落'
-    },
-    {
-        name: '论法的精神',
-        url: 'https://www.douban.com/search?q=论法的精神'
-    }
-];
-
-const csLearning = [
+const csCollection = [
     {
         name: "GitHub",
         url: "https://github.com/brenner8023"
@@ -440,7 +244,7 @@ const csLearning = [
     }
 ];
 
-const blog = [
+const blogCollection = [
     {
         name: "阮一峰",
         url: "https://www.ruanyifeng.com/"
@@ -475,7 +279,7 @@ const blog = [
     }
 ];
 
-const gameList = [
+const gameCollection = [
     {
         name: "雀魂",
         url: "https://majsoul.union-game.com/#/"
@@ -506,13 +310,9 @@ const gameList = [
 	}
 ];
 
+const navList = [schoolNav, siteCollection, toolCollection, csCollection, blogCollection, gameCollection];
+
 export {
-	menuArr: menuArr,
-	schoolNav: schoolNav,
-	commonSite: commonSite,
-	commonSoftware: commonSoftware,
-	bookList: bookList,
-	csLearning: csLearning,
-	blog: blog,
-	gameList: gameList
+	navTitle,
+	navList,
 };

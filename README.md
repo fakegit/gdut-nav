@@ -1,17 +1,12 @@
 # gdutnav
-> 工大导航, 提供校内和校外网站的快捷访问
+> 工大导航, 提供校内站点的快捷访问, 并收集了许多有用有趣的东西
 ## 使用方式
 直接访问地址 [Online](https://brenner8023.github.io)
 
-![image](https://user-images.githubusercontent.com/31237954/54878185-1f47b500-4e64-11e9-81e8-679933199d25.png)
+![image](./src/static/images/show.png)
 ## 关于项目
-- 使用create-react-app生成项目基本结构
-- 使用react/antd/redux编写业务代码
-
-实现的功能:
-- 搜索框智能提示
-- 搜索框内的一句话每10秒更新
-- 鼠标点击出现爱心特效
+- 使用了create-react-app/react/iconfont
+- 使用了es6/css3/html5/scss
 ## 开发
 ```npm
 npm install
