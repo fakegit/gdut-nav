@@ -34,6 +34,10 @@ const schoolNav = [
         url: "http://jxfw.gdut.edu.cn/"
     },
     {
+        name: "校园网续费",
+        url: "http://ehall.gdut.edu.cn/new/index.html"
+    },
+    {
         name: "图书馆",
         url: "http://library.gdut.edu.cn/"
     },
@@ -42,12 +46,8 @@ const schoolNav = [
         url: "http://job.gdut.edu.cn/unijob/index.php/web/Index/special-list?type=jiuyezhiliangnianbao"
     },
     {
-        name: "校园网续费",
-        url: "http://ehall.gdut.edu.cn/new/index.html"
-    },
-    {
-        name: "工大网管队",
-        url: "https://mp.weixin.qq.com/profile?src=3&timestamp=1552981704&ver=1&signature=X7qy7n0rR9xVptqnZppwf9pGchZZ8mqlUA17C67Ps6B-JfFA65LABEoudKUOhWwNhv9xGOK94xOKVrB-piaWjg=="
+        name: "工大知乎",
+        url: "https://www.zhihu.com/topic/19604314/"
     },
     {
         name: "电话电邮",
@@ -66,6 +66,10 @@ const schoolNav = [
         url: "http://zsb.gdut.edu.cn/"
     },
     {
+        name: "工大微博",
+        url: "https://weibo.com/gdutnc"
+    },
+    {
         name: '教学日历',
         url: 'http://jwc.gdut.edu.cn/jwgl/jxrl.htm'
     },
@@ -81,40 +85,40 @@ const siteCollection = [
         url: "https://wx2.qq.com/"
     },
     {
-        name: "虎嗅网",
-        url: "https://www.huxiu.com/"
-    },
-    {
-        name: "微博热搜",
-        url: "https://s.weibo.com/top/summary?cate=realtimehot"
+        name: "腾讯视频",
+        url: "https://v.qq.com/x/search/?q=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6"
     },
     {
         name: "腾讯动漫",
         url: "https://ac.qq.com/"
     },
     {
-        name: "哔哩哔哩",
-        url: "https://www.bilibili.com/ranking"
-    },
-    {
-        name: "腾讯体育",
-        url: "https://kbs.sports.qq.com/"
-    },
-    {
-        name: "斗鱼直播",
-        url: "https://www.douyu.com/156277"
-    },
-    {
-        name: "中国大学mooc",
-        url: "https://www.icourse163.org/"
+        name: "QQ音乐",
+        url: "https://y.qq.com/portal/search.html#w=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6"
     },
     {
         name: "网易云音乐",
         url: "https://music.163.com/"
     },
     {
+        name: "哔哩哔哩",
+        url: "https://www.bilibili.com/ranking"
+    },
+    {
+        name: "中国大学",
+        url: "https://www.icourse163.org/"
+    },
+    {
+        name: "微博热搜",
+        url: "https://s.weibo.com/top/summary?cate=realtimehot"
+    },
+    {
+        name: "百度翻译",
+        url: "https://fanyi.baidu.com/"
+    },
+    {
         name: "百度学术",
-        url: "https://xueshu.baidu.com/"
+        url: "https://xueshu.baidu.com/s?wd=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6"
     },
     {
         name: "知乎",
@@ -129,16 +133,28 @@ const siteCollection = [
         url: "https://www.xiachufang.com/"
     },
     {
-        name: "谷歌翻译",
-        url: "https://translate.google.cn/"
+        name: "花瓣网",
+        url: "https://huaban.com/search/?q=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6"
+    },
+    {
+        name: "携程旅行",
+        url: "https://www.ctrip.com/"
+    },
+    {
+        name: "丁香医生",
+        url: "https://dxy.com/"
     },
     {
         name: "企查查",
         url: "https://www.qichacha.com/search?key=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6"
     },
     {
-        name: "msdn我告诉你",
-        url: "https://msdn.itellyou.cn/"
+        name: "中国数字科技馆",
+        url: "https://www.cdstm.cn/"
+    },
+    {
+        name: "书格",
+        url: "https://www.shuge.org/"
     },
     {
         name: "高德地图",
@@ -148,12 +164,12 @@ const siteCollection = [
 
 const toolCollection = [
     {
-        name: "Firefox",
-        url: "https://www.mozilla.org/"
+        name: "MSDN我告诉你",
+        url: "https://msdn.itellyou.cn/"
     },
     {
-        name: "ubuntu",
-        url: "https://www.ubuntu.com/"
+        name: "Firefox",
+        url: "https://www.mozilla.org/"
     },
     {
         name: "火绒安全",
@@ -172,6 +188,10 @@ const toolCollection = [
         url: "https://www.snipaste.com/"
     },
     {
+        name: "ProcessOn",
+        url: "https://www.processon.com/"
+    },
+    {
         name: "Everything",
         url: "https://www.voidtools.com/"
     },
@@ -180,19 +200,23 @@ const toolCollection = [
         url: "https://www.7-zip.org/"
     },
     {
+        name: "TeamViewer",
+        url: "https://www.teamviewer.com/cn/"
+    },
+    {
         name: "微PE工具箱",
         url: "http://www.wepe.com.cn/"
     },
     {
-        name: "witeboard",
+        name: "Witeboard",
         url: "https://witeboard.com"
     },
     {
-        name: "tinypng",
-        url: "https://tinypng.com/"
+        name: "石墨文档",
+        url: "https://shimo.im/"
     },
 	{
-		name: "office模板",
+		name: "Office模板",
 		url: "http://www.officeplus.cn/Template/Home.shtml"
 	},
     {
@@ -215,8 +239,16 @@ const csCollection = [
         url: "https://leetcode-cn.com/"
     },
     {
+        name: "OSCHINA",
+        url: "https://www.oschina.net/"
+    },
+    {
         name: "看雪学院",
         url: "https://www.kanxue.com/"
+    },
+    {
+        name: "博客园",
+        url: "https://zzk.cnblogs.com/s?w=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6"
     },
     {
         name: '掘金',
@@ -227,20 +259,16 @@ const csCollection = [
         url: "https://www.v2ex.com/"
     },
     {
-        name: "中科大课程",
-        url: "https://github.com/USTC-Resource/"
+        name: "课程攻略",
+        url: "https://github.com/brenner8023/gdut-course"
     },
     {
-        name: "浙大课程",
-        url: "https://github.com/QSCTech/zju-icicles"
+        name: "996ICU",
+        url: "https://996.icu/"
     },
     {
-        name: "清华课程",
-        url: "https://github.com/Trinkle23897/THU-CST-Cracker"
-    },
-    {
-        name: "东南大学课程",
-        url: "https://github.com/zjdx1998/seucourseshare/"
+        name: "牛客网",
+        url: "https://www.nowcoder.com/"
     }
 ];
 
@@ -273,10 +301,6 @@ const blogCollection = [
         name: "王垠",
         url: "http://www.yinwang.org/#"
     },
-    {
-        name: 'phithon',
-        url: "https://www.leavesongs.com/"
-    }
 ];
 
 const gameCollection = [

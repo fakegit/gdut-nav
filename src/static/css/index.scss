@@ -27,6 +27,19 @@
 
     .header-title {
         font-size: 1.4rem;
+        animation: change 2s ease-in-out 1;
+        @keyframes change {
+            0% {
+                transform: scale(0.6);
+            }
+            70% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
         .iconfont {
             margin-left: 0.2rem;
             font-size: 1.4rem;

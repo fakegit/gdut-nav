@@ -7,6 +7,7 @@
 ## 关于项目
 - 使用了create-react-app/react/iconfont
 - 使用了es6/css3/html5/scss
+- 适配PC端和移动端
 ## 开发
 ```npm
 npm install
