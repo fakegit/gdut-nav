@@ -269,6 +269,10 @@ const csCollection = [
     {
         name: "牛客网",
         url: "https://www.nowcoder.com/"
+    },
+	{
+        name: "知识星球",
+        url: "https://www.zsxq.com/"
     }
 ];
 
