@@ -1,14 +1,12 @@
 import React from 'react';
 import Header from './components/Header';
-import Search from './components/Search';
-import Nav from './components/Nav';
+import Main from './components/Main';
 
 export default class App extends React.Component {
     render() {
         return <div>
             <Header />
-            <Search />
-            <Nav />
+            <Main />
         </div>;
     }
 }

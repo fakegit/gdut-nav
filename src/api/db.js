@@ -338,9 +338,9 @@ const gameCollection = [
 	}
 ];
 
-const navList = [schoolNav, siteCollection, toolCollection, csCollection, blogCollection, gameCollection];
+const navArray = [schoolNav, siteCollection, toolCollection, csCollection, blogCollection, gameCollection];
 
 export {
 	navTitle,
-	navList,
+	navArray,
 };
