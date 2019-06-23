@@ -10,61 +10,52 @@ class AddItem extends React.Component {
         }
     }
 
-    // 点击添加网址的回调函数
+    // 根据flag显示或隐藏对话框
+    showDialog = (flag) => {
+        this.refs["edit-dialog"].hidden = !flag;
+    }
+
+    // 点击添加网址的回调函数, 显示对话框
     handleClick = () => {
-        // 显示对话框
-        this.refs["edit-dialog"].hidden = false;
+        this.showDialog(true);
     }
 
-    // 点击取消的回调函数
-    handleCancle = () => {
-        this.refs["edit-dialog"].hidden = true;
-    }
-
-    // 点击完成的回调函数
-    handleComplete = () => {
+    // 点击取消/完成/删除按钮的回调函数
+    handleButtonClick = (e) => {
         const title = this.refs["edit-title"].value;
         const url = this.refs["edit-url"].value;
-        let newEditNav = [];
-        let editNav = [];
+        const newEditNav = this.state.editNav || [];
+        const value = e.target.value;
 
-        if(!title || !url) {
-            alert("输入不能为空");
-        } else {
-            editNav = this.state.editNav;
-            if(!editNav) {
-                newEditNav.push({
-                    title, url
-                });
-            }else {
-                editNav.push({title, url});
-                newEditNav = editNav;
+        if(value !== "取消") {
+            switch(value) {
+                // 点击删除按钮
+                case "删除":
+                    for(let i = 0; i < newEditNav.length; i++) {
+                        if(newEditNav[i].title === title) {
+                            newEditNav.splice(i, 1);
+                            break;
+                        }
+                    }
+                    break;
+                // 点击完成按钮
+                case "完成":
+                    if(!title || !url) {
+                        alert("输入不能为空");
+                        this.handleButtonClick(e);
+                    } else {
+                        newEditNav.push({title, url});
+                    }
             }
-
             window.localStorage.setItem('editNav', JSON.stringify(newEditNav));
-
-            this.refs["edit-dialog"].hidden = true;
+            this.setState({editNav: newEditNav});
         }
-    }
 
-    // 点击删除的回调函数
-    handleDelete = () => {
-        const title = this.refs["edit-title"].value;
-        const editNav = this.state.editNav;
-
-        for(let i = 0; i < editNav.length; i++) {
-            if(editNav[i].title === title) {
-                editNav.splice(i, 1);
-                break;
-            }
-        }
-        window.localStorage.setItem('editNav', JSON.stringify(editNav));
-
-        this.refs["edit-dialog"].hidden = true;
+        this.showDialog(false);
     }
 
     componentDidMount() {
-        this.refs["edit-dialog"].hidden = true;
+        this.showDialog(false);
     }
 
     render() {
@@ -73,9 +64,10 @@ class AddItem extends React.Component {
                 <i className="iconfont">&#xe634;</i>
                 <span>添加网址</span>
             </h2>
+                {/* 添加删除快捷方式的对话框 */}
                 <dialog className="edit-dialog" ref="edit-dialog" open style={{opacity: 1}}>
                     <div className="dialog-title">添加或删除快捷方式</div>
-                    <form action="">
+                    <div>
                         <div className="edit-title">
                             <label>名称 </label>
                             <input type="text" className="input-box" ref="edit-title" />
@@ -84,14 +76,16 @@ class AddItem extends React.Component {
                             <label>网址 </label>
                             <input type="text" className="input-box" ref="edit-url" />
                         </div>
+                        {/* 添加删除取消的三个按钮 */}
                         <div className="buttons-container">
-                            <input value="删除" type="submit" className="edit-submit edit-rm" onClick={this.handleDelete} />
-                            <input value="完成" type="submit" className="edit-submit edit-right" onClick={this.handleComplete} />
-                            <input value="取消" type="submit" className="edit-submit edit-right" onClick={this.handleCancle} />
+                            <input value="删除" type="submit" className="edit-submit edit-rm" onClick={this.handleButtonClick} />
+                            <input value="完成" type="submit" className="edit-submit edit-right" onClick={this.handleButtonClick} />
+                            <input value="取消" type="submit" className="edit-submit edit-right" onClick={this.handleButtonClick} />
                         </div>
-                    </form>
+                    </div>
                    
                 </dialog>
+            {/* 自定义导航快捷方式的内容 */}
             <ul className="nav-items">
                 {
                     this.state.editNav ? this.state.editNav.map((item, idx) => {
@@ -114,7 +108,7 @@ class Nav extends React.Component {
             {
                 navTitle.map((item, idx) => {
                     return (
-                        <div key={idx} className="nav-list">
+                        <div key={idx} className="nav-list floatLeft">
                             {/* nav标题 */}
                             <h2 className="nav-title">
                                 {/* 标题类型对应的图标
@@ -138,7 +132,7 @@ class Nav extends React.Component {
                         </div>
                     )
                 })
-            }
+            }                
         </div>
     }
 }
